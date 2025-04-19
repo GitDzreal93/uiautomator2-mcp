@@ -1,0 +1,5 @@
+uiautomator2>=2.16.0
+paddleocr>=2.7.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+fastmcp>=0.1.0 

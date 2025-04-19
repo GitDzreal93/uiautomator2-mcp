@@ -1,0 +1,46 @@
+[project]
+name = "uiautomator2-mcp"
+version = "0.1.0"
+description = "UIAutomator2 MCP Server with OCR support"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+dependencies = [
+    "fastmcp>=2.0.0",
+    "uiautomator2>=2.16.0",
+    "pillow>=10.0.0",
+    "adbutils>=1.2.0",
+    "paddlepaddle>=2.5.1",
+    "paddleocr>=2.7.0",
+    "opencv-python>=4.8.0",
+    "numpy>=1.24.0"
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+]
+lint = [
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = ["E", "F", "I", "N", "W", "B"]
+
+[tool.pdm.scripts]
+start = "python -m src.server" 
