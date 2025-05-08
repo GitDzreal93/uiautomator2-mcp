@@ -1,5 +1,7 @@
 # UIAutomator2 MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@GitDzreal93/uiautomator2-mcp)](https://smithery.ai/server/@GitDzreal93/uiautomator2-mcp)
+
 基于FastMCP框架实现的UIAutomator2 MCP服务器,提供Android设备自动化控制能力。
 
 ## 功能特性
@@ -28,6 +30,16 @@
 - Android设备或模拟器
 
 ## 安装
+
+### Installing via Smithery
+
+To install UIAutomator2 Android Automation Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@GitDzreal93/uiautomator2-mcp):
+
+```bash
+npx -y @smithery/cli install @GitDzreal93/uiautomator2-mcp --client claude
+```
+
+### Manual Installation
 
 1. 克隆项目
 ```bash
